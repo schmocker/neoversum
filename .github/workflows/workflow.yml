@@ -34,3 +34,6 @@ jobs:
         uses: actions/upload-pages-artifact@v1.0.4
         with:
           path: dist/neoversum
+      
+      - name: Deploy GitHub Pages site
+        uses: actions/deploy-pages@v1.1.0
