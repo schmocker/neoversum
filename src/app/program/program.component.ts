@@ -13,7 +13,7 @@ export class ProgramComponent implements OnInit {
       date: new Date(2023, 7, 19),
       program: [{
         title: "Pedestrians",
-        img: "assets/act_pedestrians.jpg",
+        img: "assets/act_pedestrians.jpeg",
         description: "Am Freitag ab 20:00 Uhr verwöhnt uns Pedestrians mit Musik"
       }, {title: "Theater Neoversum", description: "Rocket lauch 11:00pm", bookingButton: true}]
     },

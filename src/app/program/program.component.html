@@ -6,17 +6,19 @@
     <div class="card-body">
       <h5 class="card-title">{{ programDay.date | date: 'cccc, dd. MMMM yyyy':'+01:00':'de' }}</h5>
       <div class="row gap-3">
-        <div *ngFor="let programPoint of programDay.program" class="card text-dark p-2 col-xs-12 col-lg">
-          <img *ngIf="programPoint.img" [src]="programPoint.img" width="200px" class="card-img-top"
+        <div *ngFor="let programPoint of programDay.program" class="card text-dark p-0 col-xs-12 col-lg border-0">
+          <img *ngIf="programPoint.img" [src]="programPoint.img" class="card-img-top"
                [alt]="programPoint.title">
           <div class="card-body">
             <h5 class="card-title">{{ programPoint.title }}</h5>
             <p class="card-text">{{ programPoint.description }}</p>
           </div>
-          <a *ngIf="programPoint.bookingButton" href="https://www.ticketleo.com/en/" target="_blank"
-             class="btn btn-primary">
-            <fa-icon [icon]="faRocket"></fa-icon>
-            Book here!</a>
+          <div class="card-footer bg-white border-0 pb-3">
+            <a *ngIf="programPoint.bookingButton" href="https://www.ticketleo.com/en/" target="_blank"
+               class="btn btn-primary w-100">
+              <fa-icon [icon]="faRocket"></fa-icon>
+              Book now!</a>
+          </div>
         </div>
       </div>
     </div>
