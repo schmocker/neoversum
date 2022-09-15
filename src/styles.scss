@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+$primary: #103955;
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+html {
+   height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+
+  &:hover{
+    color: #d5d5d5;
+  }
+}

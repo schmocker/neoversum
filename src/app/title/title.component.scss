@@ -1,0 +1,22 @@
+#title {
+  padding: 20px;
+  height: calc(100vh - 50px);
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 100%;
+  align-content: center;
+  gap: 20px;
+
+  * {
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    #main-img {
+
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
