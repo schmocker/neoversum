@@ -1,5 +1,5 @@
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import {NgModule} from '@angular/core';
+import {NgModule, LOCALE_ID} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -11,6 +11,11 @@ import {HelpComponent} from './help/help.component';
 import {FooterComponent} from './footer/footer.component';
 import {ImpressumComponent} from './impressum/impressum.component';
 import {ProgramComponent} from './program/program.component';
+import {registerLocaleData} from '@angular/common';
+import localeDe from '@angular/common/locales/de';
+
+registerLocaleData(localeDe);
+
 
 @NgModule({
   declarations: [
@@ -28,7 +33,7 @@ import {ProgramComponent} from './program/program.component';
     AppRoutingModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'de'}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

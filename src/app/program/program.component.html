@@ -1,19 +1,24 @@
 <div class="container">
   <h1>Programm</h1>
-  <div class="card text-dark">
+
+
+  <div *ngFor="let programDay of program" class="card bg-secondary mb-4 p-2">
     <div class="card-body">
-    <h5 class="card-title">18. August 2023</h5>
-      <div class="row">
-        <div class="col-xs-12 col-lg">
-          <h6>Pedestrians</h6>
-          <p>Am Freitag ab 20:00 Uhr verwöhnt uns Pedestrians mit Musik</p>
-        </div>
-        <div class="col-xs-12 col-lg">
-          <h6>Theater</h6>
-          <p>Rocket lauch 11:00pm</p>
-    <a href="#" class="btn btn-primary"><fa-icon [icon]="faRocket"></fa-icon> Book here!</a>
+      <h5 class="card-title">{{ programDay.date | date: 'cccc, dd. MMMM yyyy':'+01:00':'de' }}</h5>
+      <div class="row gap-3">
+        <div *ngFor="let programPoint of programDay.program" class="card text-dark p-2 col-xs-12 col-lg">
+          <img *ngIf="programPoint.img" [src]="programPoint.img" width="200px" class="card-img-top"
+               [alt]="programPoint.title">
+          <div class="card-body">
+            <h5 class="card-title">{{ programPoint.title }}</h5>
+            <p class="card-text">{{ programPoint.description }}</p>
+          </div>
+          <a *ngIf="programPoint.bookingButton" href="https://www.ticketleo.com/en/" target="_blank"
+             class="btn btn-primary">
+            <fa-icon [icon]="faRocket"></fa-icon>
+            Book here!</a>
         </div>
       </div>
-  </div>
+    </div>
   </div>
 </div>
