@@ -28,7 +28,7 @@ jobs:
 
       - name: Install and build
         working-directory: .
-        run: npm i && npm run build
+        run: npm i && npm run build && cp dist/neoversum/index.html dist/neoversum/404.html
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.4
