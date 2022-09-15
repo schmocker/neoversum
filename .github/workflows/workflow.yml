@@ -28,7 +28,7 @@ jobs:
 
       - name: Install and build
         working-directory: .
-        run: npm i && ng build --base-href "https://schmocker.github.io/neoversum" && cp dist/neoversum/index.html dist/neoversum/404.html
+        run: npm i && npm build --base-href "https://schmocker.github.io/neoversum" && cp dist/neoversum/index.html dist/neoversum/404.html
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.4
