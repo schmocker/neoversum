@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-ghp": "ng build --base-href \"https://schmocker.github.io/neoversum\"",
+    "build-ghp": "ng build --base-href https://schmocker.github.io/neoversum",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
