@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: "programm", component: ProgramComponent},
   {path: "hälfe", component: HelpComponent},
   {path: "kontakt", component: ImpressumComponent},
+  {path: "*", redirectTo: ""},
 ];
 
 @NgModule({
