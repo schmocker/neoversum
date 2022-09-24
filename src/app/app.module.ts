@@ -13,6 +13,7 @@ import {ImpressumComponent} from './impressum/impressum.component';
 import {ProgramComponent} from './program/program.component';
 import {registerLocaleData} from '@angular/common';
 import localeDe from '@angular/common/locales/de';
+import { ErinnerungenComponent } from './erinnerungen/erinnerungen.component';
 
 registerLocaleData(localeDe);
 
@@ -26,7 +27,8 @@ registerLocaleData(localeDe);
     HelpComponent,
     FooterComponent,
     ImpressumComponent,
-    ProgramComponent
+    ProgramComponent,
+    ErinnerungenComponent
   ],
   imports: [
     BrowserModule,
