@@ -1,6 +1,7 @@
 
 
-$primary: #103955;
+$primary: #053555;
+$danger: #ec634d;
 
 
 @import '../node_modules/bootstrap/scss/bootstrap';
@@ -12,6 +13,9 @@ html {
 body{
   width: 100%;
   height: 100%;
+  background-image: url("assets/sternenhimmel.png");
+  background-size: contain;
+  background-repeat: repeat repeat;
 }
 
 a{
@@ -19,6 +23,6 @@ a{
   text-decoration: none;
 
   &:hover{
-    color: #d5d5d5;
+    color: $danger;
   }
 }

@@ -1,22 +1,26 @@
+
 #title {
-  padding: 20px;
-  height: calc(100vh - 50px);
+  //  padding: 20px;
+  //height: calc(100vh - 50px);
+  //height: 100vh;
   display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: 100%;
-  align-content: center;
-  gap: 20px;
+  gap: 20%;
 
-  * {
+  grid-template-rows: auto min-content;
+  grid-template-columns: auto;
+  //align-content: stretch;
+  //align-content: center;
+  //  align-items: start;
+  //  gap: 20px;
+  background-image: url("../../assets/planet_baden.png");
+  background-position: center;
+  background-size: cover;
+
+  #title-img {
     min-height: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
-    #main-img {
-
+    img {
       max-height: 100%;
-      max-width: 100%;
     }
   }
 }

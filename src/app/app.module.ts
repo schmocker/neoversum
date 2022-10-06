@@ -1,5 +1,5 @@
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import {NgModule, LOCALE_ID} from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -13,7 +13,8 @@ import {ImpressumComponent} from './impressum/impressum.component';
 import {ProgramComponent} from './program/program.component';
 import {registerLocaleData} from '@angular/common';
 import localeDe from '@angular/common/locales/de';
-import { ErinnerungenComponent } from './erinnerungen/erinnerungen.component';
+import {ErinnerungenComponent} from './erinnerungen/erinnerungen.component';
+
 
 registerLocaleData(localeDe);
 
