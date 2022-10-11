@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarCheck, faRocket } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +8,7 @@ import { faRocket } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeComponent implements OnInit {
   faRocket = faRocket;
+  faCalendarCheck = faCalendarCheck;
   showNavigationIndicators = true;
   showNavigationArrows = true;
   slides: slide[];
@@ -38,13 +39,13 @@ interface slide {
 let slides: slide[] = [
   {
     img: 'assets/portrait/chropfchroette_032.png',
-    title: 'Chrotte Grotte',
+    title: 'Quak, Quik & Quäk',
     quote:
       'Ufem Planet Chrotte Grotte het ganz e huufe Fröschli. Chlini, grossi, schöni ond wüeschti.',
   },
   {
     img: 'assets/portrait/chropfchroette_035.png',
-    title: 'Esotherikerin',
+    title: 'Elvira',
     quote: "hauptsach s'Pendel schwingt",
   },
   {
@@ -52,5 +53,10 @@ let slides: slide[] = [
     title: 'El Capitano',
     quote:
       "Sicherheit und Kontrolle, mini Dame ond Herre, das esch s'Wechtigscht!",
+  },
+  {
+    img: 'assets/portrait/chropfchroette_236.png',
+    title: 'Rosi',
+    quote: 'Mit gnue Suurstoff gahts immer!',
   },
 ];

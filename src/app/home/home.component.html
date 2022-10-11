@@ -8,19 +8,25 @@
     vorfinden lässt. Reise ebenfalls mit und entdecke mit uns eine neue Welt -
     eine Welt jenseits des bis jetzt bekannten Universums!
   </p>
-  <div class="d-flex justify-content-around">
+  <div class="d-flex justify-content-center">
     <a
       href="https://www.ticketleo.com/en/"
       target="_blank"
-      class="btn btn-dark">
+      class="btn btn-dark mx-2">
       <fa-icon [icon]="faRocket" class="text-danger"></fa-icon>
-      Jetzt buchen!</a
+      Theater buchen!</a
+    >
+    <a [routerLink]="'/programm'" class="btn btn-dark mx-2">
+      <fa-icon [icon]="faCalendarCheck" class="text-danger"></fa-icon>
+      Zum Programm!</a
     >
   </div>
 
   <ngb-carousel
     *ngIf="slides"
     [showNavigationArrows]="showNavigationArrows"
+    [pauseOnHover]="false"
+    [pauseOnFocus]="false"
     [showNavigationIndicators]="showNavigationIndicators">
     <ng-template ngbSlide *ngFor="let slide of slides">
       <div class="picsum-img-wrapper d-flex justify-content-around">
@@ -31,7 +37,7 @@
           <blockquote class="blockquote">
             <p>"{{ slide.quote }}"</p>
           </blockquote>
-          <figcaption class="blockquote-footer text-danger">
+          <figcaption class="blockquote-footer text-danger fs-3">
             {{ slide.title }}
           </figcaption>
         </figure>
