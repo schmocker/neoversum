@@ -1,10 +1,12 @@
-
 #title {
   //  padding: 20px;
   //height: calc(100vh - 50px);
   //height: 100vh;
   display: grid;
   gap: 20%;
+  /* mobile viewport bug fix */
+  //noinspection CssInvalidPropertyValue
+  height: -webkit-fill-available;
 
   grid-template-rows: auto min-content;
   grid-template-columns: auto;
@@ -12,7 +14,7 @@
   //align-content: center;
   //  align-items: start;
   //  gap: 20px;
-  background-image: url("../../assets/planet_baden.png");
+  background-image: url('../../assets/planet_baden.png');
   background-position: center;
   background-size: cover;
 

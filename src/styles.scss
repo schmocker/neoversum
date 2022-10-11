@@ -4,16 +4,21 @@ $danger: #ec634d;
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
-html {
-  height: 100%;
+:root {
+  --app-height: 100%;
 }
 
+html,
 body {
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-image: url('assets/sternenhimmel.png');
   background-size: contain;
   background-repeat: repeat repeat;
+
+  @media not all and (hover: hover) {
+    height: var(--app-height);
+  }
 }
 
 a {
