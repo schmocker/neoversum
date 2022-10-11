@@ -1,1 +1,9 @@
+::ng-deep {
+  img {
+    max-width: 50vh !important;
+  }
+}
 
+.carousel-caption {
+  background-color: rgba(5, 53, 85, 0.8);
+}

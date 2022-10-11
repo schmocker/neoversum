@@ -1,7 +1,30 @@
-<div id="navbar" class="d-flex flex-wrap align-items-center justify-content-evenly text-light p-3 gap-3 border-bottom border-dark">
+<div
+  id="navbar"
+  class="d-flex flex-wrap align-items-center justify-content-evenly text-light p-3 gap-3 border-bottom border-dark border-2">
   <a routerLink="/">NEOVERSUM</a>
-  <a routerLink="/programm">Programm</a>
-  <a routerLink="/erinnerungen">Erinnerungen</a>
-  <a routerLink="/" class="text-muted">Theater</a>
-  <a routerLink="/hälfe">Mithelfen</a>
+  <a
+    routerLink="/programm"
+    [routerLinkActive]="['text-danger']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Programm</a
+  >
+  <a
+    routerLink="/erinnerungen"
+    [routerLinkActive]="['text-danger']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Erinnerungen</a
+  >
+  <a
+    routerLink="/"
+    [routerLinkActive]="['text-danger']"
+    class="text-muted"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Theater</a
+  >
+  <a
+    routerLink="/hälfe"
+    [routerLinkActive]="['text-danger']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Mithelfen</a
+  >
 </div>

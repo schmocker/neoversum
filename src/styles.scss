@@ -1,28 +1,30 @@
-
-
 $primary: #053555;
 $danger: #ec634d;
 
-
-@import '../node_modules/bootstrap/scss/bootstrap';
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
 
 html {
-   height: 100%;
+  height: 100%;
 }
 
-body{
+body {
   width: 100%;
   height: 100%;
-  background-image: url("assets/sternenhimmel.png");
+  background-image: url('assets/sternenhimmel.png');
   background-size: contain;
   background-repeat: repeat repeat;
 }
 
-a{
+a {
   color: white;
   text-decoration: none;
 
-  &:hover{
+  &:hover {
     color: $danger;
   }
+}
+
+p {
+  font-size: x-large;
 }
