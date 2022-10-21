@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faCalendarCheck, faRocket } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCalendarCheck,
+  faMapLocation,
+  faRocket,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +12,7 @@ import { faCalendarCheck, faRocket } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeComponent implements OnInit {
   faRocket = faRocket;
+  faMapLocation = faMapLocation;
   faCalendarCheck = faCalendarCheck;
   showNavigationIndicators = true;
   showNavigationArrows = true;

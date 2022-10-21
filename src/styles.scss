@@ -2,7 +2,7 @@ $primary: #053555;
 $danger: #ec634d;
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap';
 
 :root {
   --app-height: 100%;
@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  color: white;
+  color: #b6b6b6;
   text-decoration: none;
 
   &:hover {
