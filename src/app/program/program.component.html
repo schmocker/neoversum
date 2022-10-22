@@ -1,47 +1,75 @@
 <div class="container">
   <h1>Programm</h1>
 
-  <div *ngFor="let programDay of program" class="card bg-secondary mb-4 p-2">
-    <div class="card-body">
-      <h5 class="card-title">
-        {{ programDay.date | date: 'cccc, dd. MMMM yyyy':'+01:00':'de' }}
-      </h5>
-      <div class="row row-cols-1 row-cols-lg-2">
-        <div *ngFor="let programPoint of programDay.program" class="col p-2">
-          <div class="card text-dark p-0 border-0">
-            <img
-              *ngIf="programPoint.img"
-              [src]="programPoint.img"
-              class="card-img-top bg-primary"
-              [class.p-5]="programPoint.isTheatre"
-              [alt]="programPoint.title" />
-            <div class="card-body">
-              <div class="card-title row justify-content-between">
-                <h5 class="col">{{ programPoint.title }}</h5>
-                <div class="col-auto">
-                  <div
-                    class="badge align-middle border border-danger text-danger rounded"
-                    *ngIf="!programPoint.isTheatre">
-                    GRATIS
-                    <!--                <img src="assets/gratis.png" width="100px" />-->
-                  </div>
-                </div>
-              </div>
-              <p class="card-text mt-2">{{ programPoint.description }}</p>
+  <!--  <div *ngFor="let programDay of program" class="card bg-secondary mb-4 p-2">-->
+  <!--    <div class="card-body">-->
+  <!--      <h5 class="card-title">-->
+  <!--        {{ programDay.date | date: 'cccc, dd. MMMM yyyy':'+01:00':'de' }}-->
+  <!--      </h5>-->
+  <!--      <div class="row row-cols-1 row-cols-lg-2">-->
+  <!--        <div *ngFor="let programPoint of programDay.program" class="col p-2">-->
+  <!--          <div class="card text-dark p-0 border-0">-->
+  <!--            <img-->
+  <!--              *ngIf="programPoint.img"-->
+  <!--              [src]="programPoint.img"-->
+  <!--              class="card-img-top bg-primary"-->
+  <!--              [class.p-5]="programPoint.isTheatre"-->
+  <!--              [alt]="programPoint.title" />-->
+  <!--            <div class="card-body">-->
+  <!--              <div class="card-title row justify-content-between">-->
+  <!--                <h5 class="col">{{ programPoint.title }}</h5>-->
+  <!--                <div class="col-auto">-->
+  <!--                  <div-->
+  <!--                    class="badge align-middle border border-danger text-danger rounded"-->
+  <!--                    *ngIf="!programPoint.isTheatre">-->
+  <!--                    GRATIS-->
+  <!--                    &lt;!&ndash;                <img src="assets/gratis.png" width="100px" />&ndash;&gt;-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--              <p class="card-text mt-2">{{ programPoint.description }}</p>-->
+  <!--            </div>-->
+  <!--            <div class="card-footer bg-white border-0 pb-3">-->
+  <!--              <a-->
+  <!--                *ngIf="programPoint.bookingButton"-->
+  <!--                href="https://www.ticketleo.com/en/"-->
+  <!--                target="_blank"-->
+  <!--                class="btn btn-primary w-100">-->
+  <!--                <fa-icon [icon]="faRocket"></fa-icon>-->
+  <!--                Book now!</a-->
+  <!--              >-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <table class="table table-responsive text-white">
+    <thead>
+      <tr>
+        <th scope="col">Datum</th>
+        <th scope="col">Veranstaltung</th>
+        <th scope="col">Beschreibung</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let day of program">
+        <tr *ngFor="let pp of day.program; let i = index">
+          <td *ngIf="i == 0">
+            {{ day.date | date: 'cccc, dd. MMMM yyyy':'+01:00':'de' }}
+          </td>
+          <td *ngIf="i > 0"></td>
+          <td>
+            {{ pp.title }}
+            <div
+              class="badge align-middle border border-danger text-danger rounded"
+              *ngIf="!pp.isTheatre">
+              GRATIS
             </div>
-            <div class="card-footer bg-white border-0 pb-3">
-              <a
-                *ngIf="programPoint.bookingButton"
-                href="https://www.ticketleo.com/en/"
-                target="_blank"
-                class="btn btn-primary w-100">
-                <fa-icon [icon]="faRocket"></fa-icon>
-                Book now!</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+          </td>
+          <td>{{ pp.description }}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
 </div>

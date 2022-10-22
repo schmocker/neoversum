@@ -1,0 +1,46 @@
+<div class="container">
+  <h1>Hauptsponsoren</h1>
+  <div class="mb-5">
+    <div class="row">
+      <div
+        class="col col-lg-3"
+        *ngFor="let sponsor of primarySponsors"
+        style="max-width: 500px">
+        <div class="card bg-transparent border-0">
+          <img [src]="sponsor.imgSrc" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              <a [href]="sponsor.url" target="_blank">{{ sponsor.name }}</a>
+            </h5>
+            <p class="card-text small">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Sponsoren</h2>
+  <div class="mb-5">
+    <div class="row">
+      <div
+        class="col col-lg-3"
+        *ngFor="let sponsor of secondarySponsors"
+        style="max-width: 500px">
+        <div class="card bg-transparent border-0">
+          <img [src]="sponsor.imgSrc" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              <a [href]="sponsor.url" target="_blank">{{ sponsor.name }}</a>
+            </h5>
+            <p class="card-text small">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

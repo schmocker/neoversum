@@ -15,6 +15,7 @@ import { registerLocaleData } from '@angular/common';
 import localeDe from '@angular/common/locales/de';
 import { ErinnerungenComponent } from './erinnerungen/erinnerungen.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SponsorenComponent } from './sponsoren/sponsoren.component';
 
 registerLocaleData(localeDe);
 
@@ -29,6 +30,7 @@ registerLocaleData(localeDe);
     ImpressumComponent,
     ProgramComponent,
     ErinnerungenComponent,
+    SponsorenComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, NgbModule],
   providers: [{ provide: LOCALE_ID, useValue: 'de' }],
