@@ -46,12 +46,12 @@ let slides: slide[] = [
     img: 'assets/portrait/chropfchroette_032.png',
     title: 'Quak, Quik & Quäk',
     quote:
-      'Ufem Planet Chrotte Grotte het ganz e huufe Fröschli. Chlini, grossi, schöni ond wüeschti.',
+      'Ufem Planet Chrotte Grotte hets ganz e huufe Fröschli. Chlini, grossi, schöni ond wüeschti.',
   },
   {
     img: 'assets/portrait/chropfchroette_035.png',
     title: 'Elvira',
-    quote: "hauptsach s'Pendel schwingt",
+    quote: "Hauptsach s'Pendel schwingt",
   },
   {
     img: 'assets/portrait/chropfchroette_071.png',

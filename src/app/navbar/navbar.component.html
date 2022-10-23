@@ -1,28 +1,45 @@
 <div
   id="navbar"
-  class="d-flex flex-wrap align-items-center justify-content-evenly text-light p-3 gap-3 border-bottom border-dark border-2">
-  <a routerLink="/">NEOVERSUM</a>
+  class="d-flex flex-wrap align-items-center justify-content-evenly text-light p-3 gap-3 bg-primary border-bottom border-dark border-2">
   <a
+    class="p-2"
+    routerLink="/"
+    [routerLinkActive]="['text-decoration-underline']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >NEOVERSUM</a
+  >
+  <a
+    class="p-2"
     routerLink="/programm"
-    [routerLinkActive]="['text-danger']"
+    [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
     >Programm</a
   >
   <a
+    class="p-2"
+    routerLink="/aktuelles"
+    [routerLinkActive]="['text-decoration-underline']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Aktuelles</a
+  >
+  <a
+    class="p-2"
     routerLink="/erinnerungen"
-    [routerLinkActive]="['text-danger']"
+    [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
     >Erinnerungen</a
   >
   <a
+    class="p-2"
     routerLink="/sponsoren"
-    [routerLinkActive]="['text-danger']"
+    [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
     >Sponsoren</a
   >
   <a
+    class="p-2"
     routerLink="/hälfe"
-    [routerLinkActive]="['text-danger']"
+    [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
     >Mithelfen</a
   >

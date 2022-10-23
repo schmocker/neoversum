@@ -11,13 +11,13 @@ export class SponsorenComponent implements OnInit {
       name: 'A. Staffelbach AG',
       url: 'https://www.a-staffelbach.ch/',
       imgSrc: 'assets/sponsoren/a-staffelbach-ag.webp',
-      mainSponsor: true,
+      mainSponsor: false,
     },
     {
       name: 'Meier Schmocker AG',
       url: 'https://www.msag2020.ch/',
       imgSrc: 'assets/sponsoren/meier-schmocker-ag.jpeg',
-      mainSponsor: false,
+      mainSponsor: true,
     },
   ];
 
@@ -34,7 +34,7 @@ export class SponsorenComponent implements OnInit {
   }
 }
 
-interface Sponsor {
+export interface Sponsor {
   name: string;
   description?: string;
   url: string;

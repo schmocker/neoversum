@@ -1,0 +1,18 @@
+<div
+  class="bg-white h-100 d-flex flex-column justify-content-evenly p-2 rounded">
+  <div class="mb-2">
+    <a [href]="sponsor.url" target="_blank">
+      <img [src]="sponsor.imgSrc" [alt]="sponsor.name" class="w-100" />
+    </a>
+  </div>
+  <div class="">
+    <h5 class="card-title">
+      <a [href]="sponsor.url" target="_blank">
+        {{ sponsor.name }}
+      </a>
+    </h5>
+    <p *ngIf="sponsor.description" class="card-text small text-dark">
+      {{ sponsor.description }}
+    </p>
+  </div>
+</div>

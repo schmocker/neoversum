@@ -1,29 +1,38 @@
 #title {
-  //  padding: 20px;
-  //height: calc(100vh - 50px);
-  //height: 100vh;
   display: grid;
   gap: 20%;
+
+  width: 100%;
+  height: 100vh !important;
   /* mobile viewport bug fix */
-  //noinspection CssInvalidPropertyValue
+  height: -moz-available;
   height: -webkit-fill-available;
 
-  grid-template-rows: auto min-content;
-  grid-template-columns: auto;
-  //align-content: stretch;
-  //align-content: center;
-  //  align-items: start;
-  //  gap: 20px;
+  grid-template-rows: min-content auto min-content; // comment this line if prod
+  //grid-template-rows: auto min-content; // uncomment this line if prod
+  grid-template-columns: 1fr;
+
   background-image: url('../../assets/planet_baden.png');
   background-position: center;
   background-size: cover;
 
-  #title-img {
+  #title-img-container {
     min-height: 0;
 
-    img {
+    display: grid;
+    grid-template-columns: auto;
+
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    //overflow: hidden;
+
+    img#title-img {
+      min-height: 0;
+      min-width: 0;
       max-height: 100%;
-      max-width: 80vw;
+      max-width: 100%;
     }
   }
 }

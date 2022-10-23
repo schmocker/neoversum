@@ -6,6 +6,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { ProgramComponent } from './program/program.component';
 import { ErinnerungenComponent } from './erinnerungen/erinnerungen.component';
 import { SponsorenComponent } from './sponsoren/sponsoren.component';
+import { AktuellesComponent } from './aktuelles/aktuelles.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'hälfe', component: HelpComponent },
   { path: 'kontakt', component: ImpressumComponent },
   { path: 'sponsoren', component: SponsorenComponent },
+  { path: 'aktuelles', component: AktuellesComponent },
   { path: '*', redirectTo: '' },
 ];
 

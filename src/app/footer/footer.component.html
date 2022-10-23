@@ -1,10 +1,37 @@
-<div class="d-flex  flex-wrap gap-2 p-3 mt-5 justify-content-around border-top border-2 border-dark">
-  <div class="d-felx">
-    <img alt="Chropf Chrötte" src="assets/logos/chropfchroette_white_1000px.png"
-         style="max-height: 200px" class="mw-100">
+<div
+  class="container-fluid border-top border-2 border-dark bg-primary mt-5 p-3">
+  <div class="d-flex flex-wrap gap-2 justify-content-around">
+    <div class="d-felx">
+      <img
+        alt="Chropf Chrötte"
+        src="assets/logos/chropfchroette_white_1000px.png"
+        style="max-height: 200px"
+        class="mw-100" />
+    </div>
+    <div>
+      <img
+        alt="Terrassion"
+        src="assets/logos/terrassino_grey_1000px.png"
+        style="max-height: 200px"
+        class="mw-100" />
+    </div>
   </div>
-  <div>
-    <img alt="Terrassion" src="assets/logos/terrassino_grey_1000px.png"
-         style="max-height: 200px" class="mw-100">
+  <div class="container py-4 d-flex gap-3 justify-content-evenly flex-wrap">
+    <a routerLink="/kontakt">
+      <fa-icon [icon]="faMessage"></fa-icon>
+      Kontakt</a
+    >
+    <a href="https://goo.gl/maps/67ajasejdUMsYSQR9" target="_blank">
+      <fa-icon [icon]="faMapLocation"></fa-icon>
+      Standort</a
+    >
+    <a href="https://badenfahrt.ch/" target="_blank">
+      <fa-icon [icon]="faChampagneGlasses"></fa-icon>
+      Badenfahrt 2023</a
+    >
+    <a routerLink="/sponsoren">
+      <fa-icon [icon]="faStar"></fa-icon>
+      Sponsoren</a
+    >
   </div>
 </div>

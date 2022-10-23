@@ -44,32 +44,53 @@
   <!--      </div>-->
   <!--    </div>-->
   <!--  </div>-->
-  <table class="table table-responsive text-white">
-    <thead>
-      <tr>
-        <th scope="col">Datum</th>
-        <th scope="col">Veranstaltung</th>
-        <th scope="col">Beschreibung</th>
-      </tr>
-    </thead>
-    <tbody>
-      <ng-container *ngFor="let day of program">
-        <tr *ngFor="let pp of day.program; let i = index">
-          <td *ngIf="i == 0">
-            {{ day.date | date: 'cccc, dd. MMMM yyyy':'+01:00':'de' }}
-          </td>
-          <td *ngIf="i > 0"></td>
+  <div class="table-responsive">
+    <table class="table text-white">
+      <thead>
+        <tr>
+          <th scope="col">Datum</th>
+          <th scope="col">Startzeit</th>
+          <th scope="col">Veranstaltung</th>
+          <th scope="col">Beschreibung</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pp of program; let i = index">
           <td>
+            <ng-container
+              *ngIf="program[i - 1]?.date?.getDate() != pp.date.getDate()">
+              {{ pp.date | date: 'cccc, dd. MMMM yyyy':'MESZ':'de-ch' }}
+            </ng-container>
+          </td>
+          <td>
+            <ng-container *ngIf="pp.showTime">
+              {{ pp.date | date: 'HH:mm':'MESZ':'de-ch' }} Uhr
+            </ng-container>
+            <ng-container *ngIf="!pp.showTime"> unbekannt</ng-container>
+          </td>
+          <td>
+            <fa-icon *ngIf="pp.isTheatre" [icon]="faRocket"></fa-icon>
+            <fa-icon *ngIf="!pp.isTheatre" [icon]="faStar"></fa-icon>
             {{ pp.title }}
-            <div
-              class="badge align-middle border border-danger text-danger rounded"
-              *ngIf="!pp.isTheatre">
-              GRATIS
-            </div>
           </td>
           <td>{{ pp.description }}</td>
+          <td>
+            <div
+              class="badge bg-danger text-dark rounded text-wrap"
+              *ngIf="!pp.isTheatre">
+              GRATIS & ÖFFENTLICH
+            </div>
+            <a
+              *ngIf="pp.bookingButton"
+              href="https://www.ticketleo.com/en/"
+              target="_blank"
+              class="btn btn-sm btn-outline-danger text-nowrap disabled">
+              <fa-icon [icon]="faRocket"></fa-icon>
+              Book now!</a
+            >
+          </td>
         </tr>
-      </ng-container>
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+  </div>
 </div>

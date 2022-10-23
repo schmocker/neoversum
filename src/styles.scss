@@ -8,13 +8,76 @@ $danger: #ec634d;
   --app-height: 100%;
 }
 
+$bg-width: 0px;
+$bg-height: 1780px;
+$bk-time: 60s;
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: $bg-width $bg-height;
+  }
+}
+
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: $bg-width $bg-height;
+  }
+}
+
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: $bg-width $bg-height;
+  }
+}
+
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: $bg-width $bg-height;
+  }
+}
+
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: $bg-width $bg-height;
+  }
+}
+
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: $bg-width $bg-height;
+  }
+}
+
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: $bg-width $bg-height;
+  }
+}
+
+@keyframes bg-scrolling {
+  0% {
+    background-position: $bg-width $bg-height;
+  }
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
+  background-color: $primary;
   background-image: url('assets/sternenhimmel.png');
   background-size: contain;
   background-repeat: repeat repeat;
+
+  -webkit-animation: bg-scrolling-reverse $bk-time infinite; /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse $bk-time infinite; /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse $bk-time infinite; /* Opera 12+ */
+  animation: bg-scrolling-reverse $bk-time infinite; /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
 
   @media not all and (hover: hover) {
     height: var(--app-height);
@@ -22,11 +85,17 @@ body {
 }
 
 a {
-  color: #b6b6b6;
+  //color: tint-color($danger, 20%);
+  color: $danger;
   text-decoration: none;
 
   &:hover {
     color: $danger;
+    text-decoration: underline;
+
+    &.btn {
+      text-decoration: none !important;
+    }
   }
 }
 
