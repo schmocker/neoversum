@@ -101,3 +101,19 @@ a {
 p {
   font-size: x-large;
 }
+
+::-webkit-scrollbar {
+  background: $primary;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $danger;
+  border-radius: 4px;
+}
+
+html {
+  scrollbar-color: $danger $primary;
+  scrollbar-width: thin;
+}
