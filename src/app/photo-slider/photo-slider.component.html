@@ -1,0 +1,14 @@
+<div>
+  <ngb-carousel
+    #carousel
+    [showNavigationArrows]="true"
+    [pauseOnHover]="true"
+    [pauseOnFocus]="true"
+    [showNavigationIndicators]="true">
+    <ng-template ngbSlide *ngFor="let photo of photos">
+      <div class="picsum-img-wrapper border border-1 border-danger">
+        <img [src]="photo" />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

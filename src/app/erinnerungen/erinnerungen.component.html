@@ -1,89 +1,108 @@
 <div class="container">
   <h1>Erinnerungen</h1>
-  Hier einige Eindrücke zur Vorfreude...
-  <div class="my-5">
-    <h3>Schrott Boden Alp - Badenfahrt 2017</h3>
-    <div class="row">
-      <div class="col text-danger">
-        <h5>Chropfchrötte und terrassino Zusammen</h5>
-
-        <ul>
-          <li>Little Wettingen</li>
-          <li>Klamauk Theater der Chropfchrötte</li>
-          <li>Kulturangebot vom Terrassino</li>
-          <li>neuer Standort</li>
-          <li>Wettiger Vereine</li>
-          <li>Baba Bar</li>
-          <li>...</li>
-        </ul>
-      </div>
-      <div class="col">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/cCLRQBtMTFI"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-  <div class="my-5">
-    <h3>Grandhotel Chriesi - "kleine" Badenfahrt 2012 (Little Wettingen)</h3>
-    <div class="row">
-      <div class="col text-danger">
-        <h5>Little Wettingen:</h5>
-        <ul>
-          <li>Klamauk Theater</li>
-          <li>Little Wettingen</li>
-          <li>Gstüel / Chriesi Areal</li>
-          <li>Wettinger Vereine</li>
-          <li>Palazzo Pazzo</li>
-          <li>Baba Bar</li>
-          <li>Weinkeller</li>
-          <li>Disco Wiseli</li>
-          <li>...</li>
-        </ul>
-        <h5>terrassino:</h5>
-        <ul>
-          <li>Kulturangebot</li>
-          <li>Schlossberg?</li>
-        </ul>
-      </div>
-      <div class="col">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/OEZI7apUhH8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+  Hier einige Eindrücke aus der Vergangenheit ...
+  <div class="row g-5 mt-3">
+    <div class="col col-12">
+      <h3 class="text-danger">Schrott Boden Alp - Badenfahrt 2017</h3>
+      <div class="row g-3">
+        <div class="col col-12 col-lg-6">
+          <ul>
+            <li>Chropfchrötte und terrassino zusammen</li>
+            <li>Little Wettingen</li>
+            <li>Klamauk Theater der Chropfchrötte</li>
+            <li>Kulturangebot vom Terrassino</li>
+            <li>neuer Standort</li>
+            <li>Wettiger Vereine</li>
+            <li>Baba Bar</li>
+            <li>...</li>
+          </ul>
+        </div>
+        <div class="col col-12 col-lg-6">
+          <iframe
+            class="youtube border border-1 border-danger"
+            src="https://www.youtube.com/embed/cCLRQBtMTFI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col col-12">
+          <app-photo-slider [photos]="photosBF2017"></app-photo-slider>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="my-5">
-    <h3>Schlosserstift Chriesi - Badenfahrt 2007</h3>
-    <div class="row">
-      <div class="col text-danger">
-        <h5></h5>
-        <ul>
-          <li>Chropfchrötte</li>
-          <li>Gstüel / Chriesi Areal</li>
-          <li>Baba Bar</li>
-        </ul>
+    <hr class="border border-danger border-2 opacity-50" />
+    <div class="col col-12">
+      <h3 class="text-danger">Terrassino - "kleine" Badenfahrt 2012</h3>
+      <div class="row g-3">
+        <div class="col col-12">
+          <ul>
+            <li>Kulturangebot</li>
+            <li>Schlossberg?</li>
+            <li>...</li>
+          </ul>
+        </div>
+        <div class="col col-12">
+          <app-photo-slider
+            [photos]="photosBF2012Terrassion"></app-photo-slider>
+        </div>
       </div>
-      <div class="col">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/iZCM_db4l8I"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+    </div>
+    <hr class="border border-danger border-2 opacity-50" />
+    <div class="col col-12">
+      <h3 class="text-danger">
+        Grandhotel Chriesi - "kleine" Badenfahrt 2012 (Little Wettingen)
+      </h3>
+      <div class="row g-3">
+        <div class="col col-12 col-lg-6">
+          <ul>
+            <li>Klamauk Theater</li>
+            <li>Little Wettingen</li>
+            <li>Gstüel / Chriesi Areal</li>
+            <li>Wettinger Vereine</li>
+            <li>Palazzo Pazzo</li>
+            <li>Baba Bar</li>
+            <li>Weinkeller</li>
+            <li>Disco Wiseli</li>
+            <li>...</li>
+          </ul>
+        </div>
+        <div class="col col-12 col-lg-6">
+          <iframe
+            class="youtube border border-1 border-danger"
+            src="https://www.youtube.com/embed/OEZI7apUhH8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col col-12">
+          <app-photo-slider [photos]="photosBF2012ChrChr"></app-photo-slider>
+        </div>
+      </div>
+    </div>
+    <hr class="border border-danger border-2 opacity-50" />
+    <div class="col col-12">
+      <h3 class="text-danger">Schlosserstift Chriesi - Badenfahrt 2007</h3>
+      <div class="row g-3">
+        <div class="col col-12 col-lg-6">
+          <h5></h5>
+          <ul>
+            <li>Chropfchrötte</li>
+            <li>Gstüel / Chriesi Areal</li>
+            <li>Baba Bar</li>
+            <li>...</li>
+          </ul>
+        </div>
+        <div class="col col-12 col-lg-6">
+          <iframe
+            class="youtube border border-1 border-danger"
+            src="https://www.youtube.com/embed/iZCM_db4l8I"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>

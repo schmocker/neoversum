@@ -17,6 +17,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SponsorenComponent } from './sponsoren/sponsoren.component';
 import { SponsorCardComponent } from './sponsoren/sponsor-card/sponsor-card.component';
 import { AktuellesComponent } from './aktuelles/aktuelles.component';
+import { PhotoSliderComponent } from './photo-slider/photo-slider.component';
 
 registerLocaleData(localeDe);
 
@@ -34,6 +35,7 @@ registerLocaleData(localeDe);
     SponsorenComponent,
     SponsorCardComponent,
     AktuellesComponent,
+    PhotoSliderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, NgbModule],
   providers: [{ provide: LOCALE_ID, useValue: 'de' }],
