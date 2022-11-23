@@ -7,18 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SponsorenComponent implements OnInit {
   allSponsors: Sponsor[] = [
-    {
-      name: 'A. Staffelbach AG',
-      url: 'https://www.a-staffelbach.ch/',
-      imgSrc: 'assets/sponsoren/a-staffelbach-ag.webp',
-      mainSponsor: false,
-    },
-    {
-      name: 'Meier Schmocker AG',
-      url: 'https://www.msag2020.ch/',
-      imgSrc: 'assets/sponsoren/meier-schmocker-ag.jpeg',
-      mainSponsor: true,
-    },
+    // {
+    //   name: 'A. Staffelbach AG',
+    //   url: 'https://www.a-staffelbach.ch/',
+    //   imgSrc: 'assets/sponsoren/a-staffelbach-ag.webp',
+    //   mainSponsor: false,
+    // },
+    // {
+    //   name: 'Meier Schmocker AG',
+    //   url: 'https://www.msag2020.ch/',
+    //   imgSrc: 'assets/sponsoren/meier-schmocker-ag.jpeg',
+    //   mainSponsor: true,
+    // },
   ];
 
   constructor() {}
