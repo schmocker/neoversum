@@ -1,6 +1,13 @@
-td {
-  border-style: dotted none none none !important;
-  border-width: 2px;
+tr {
+  border: none !important;
+
+  &.bold {
+    border-style: solid none none none !important;
+    border-width: 2px !important;
+  }
+
+  td {
+  }
 }
 
 th {
