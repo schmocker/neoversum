@@ -12,7 +12,7 @@ export class SponsorenComponent implements OnInit {
       url: 'https://www.msag2020.ch/',
       imgSrc: 'assets/sponsoren/meier-schmocker-ag.jpeg',
     },
-  ].sort((a, b) => 0.5 - Math.random());
+  ].sort(() => 0.5 - Math.random());
   secondarySponsors: Sponsor[] = [
     {
       name: 'Hächler AG',
@@ -29,7 +29,7 @@ export class SponsorenComponent implements OnInit {
       url: 'https://www.raiffeisen.ch/laegern-baregg/de/ueber-uns/ihre-bank-vor-ort.html',
       imgSrc: 'assets/sponsoren/Raiffeisen_LB_ihreBank_Logo_300622.jpg',
     },
-  ].sort((a, b) => 0.5 - Math.random());
+  ].sort(() => 0.5 - Math.random());
   goennerSponsors: Sponsor[] = [
     {
       name: 'Beck Alt',
@@ -56,7 +56,7 @@ export class SponsorenComponent implements OnInit {
       url: 'https://www.taegi.ch/',
       imgSrc: 'assets/sponsoren/Taegi_Logo_rgb_Zusatz.jpg',
     },
-  ].sort((a, b) => 0.5 - Math.random());
+  ].sort(() => 0.5 - Math.random());
 
   constructor() {}
 
