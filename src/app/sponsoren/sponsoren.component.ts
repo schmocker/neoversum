@@ -44,7 +44,7 @@ export class SponsorenComponent implements OnInit {
     {
       name: 'LägereBräu AG',
       url: 'https://laegerebraeu.ch/',
-      imgSrc: 'assets/sponsoren/LägereBräu.jpg',
+      imgSrc: 'assets/sponsoren/LaegereBraeu.jpg',
     },
     {
       name: 'pro argovia',
