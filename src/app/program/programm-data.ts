@@ -18,7 +18,7 @@ let theaterDescription = '🥂 🍕 🍺 🎶 🎭 🚀';
 let theaterProgram: ProgramPoint[] = [
   {
     date: new Date(2023, 7, 18, 21, 21),
-    title: 'Theater Neoversum',
+    title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
     isTheatre: true,
@@ -26,7 +26,7 @@ let theaterProgram: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 19, 22, 22),
-    title: 'Theater Neoversum',
+    title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
     isTheatre: true,
@@ -34,7 +34,7 @@ let theaterProgram: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 20, 21, 21),
-    title: 'Theater Neoversum',
+    title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
     isTheatre: true,
@@ -42,7 +42,7 @@ let theaterProgram: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 21, 21, 21),
-    title: 'Theater Neoversum',
+    title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
     isTheatre: true,
@@ -50,7 +50,7 @@ let theaterProgram: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 22, 21, 21),
-    title: 'Theater Neoversum',
+    title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
     isTheatre: true,
@@ -58,7 +58,7 @@ let theaterProgram: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 23, 21, 21),
-    title: 'Theater Neoversum',
+    title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
     isTheatre: true,
@@ -66,7 +66,7 @@ let theaterProgram: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 24, 21, 21),
-    title: 'Theater Neoversum',
+    title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
     isTheatre: true,
@@ -74,7 +74,7 @@ let theaterProgram: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 26, 22, 22),
-    title: 'Theater Neoversum',
+    title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
     isTheatre: true,
@@ -82,7 +82,7 @@ let theaterProgram: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 27, 21, 21),
-    title: 'Theater Neoversum',
+    title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
     isTheatre: true,
