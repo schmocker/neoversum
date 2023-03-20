@@ -33,6 +33,11 @@
   </div>
 
   <h1>Programm</h1>
+</div>
+<div class="container-lg">
+  <div class="alert alert-danger d-md-none" role="alert">
+    ↔️ Vertikal scollen um mehr Informationen anzuzeigen
+  </div>
   <div class="table-responsive">
     <table class="table text-white">
       <thead>
@@ -58,7 +63,12 @@
                 : '')
             ">
             <ng-container *ngIf="pp.showDate">
-              {{ pp.date | date : 'cccc, dd. MMMM yyyy' : 'MESZ' : 'de-ch' }}
+              <span class="text-nowrap d-none d-lg-block">{{
+                pp.date | date : 'cccc, dd. MMMM yyyy' : 'MESZ' : 'de-ch'
+              }}</span>
+              <span class="d-lg-none">{{
+                pp.date | date : 'ccc, dd.MM.' : 'MESZ' : 'de-ch'
+              }}</span>
             </ng-container>
           </td>
           <td class="text-nowrap">
