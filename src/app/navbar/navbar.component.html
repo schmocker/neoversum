@@ -1,4 +1,5 @@
 <div
+  #navbar
   id="navbar"
   class="d-flex flex-wrap align-items-center justify-content-evenly text-light p-3 gap-3 bg-primary border-bottom border-dark border-2">
   <a
@@ -6,6 +7,7 @@
     routerLink="/"
     [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
+    (click)="scroll()"
     >NEOVERSUM</a
   >
   <a
@@ -13,6 +15,7 @@
     routerLink="/programm"
     [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
+    (click)="scroll()"
     >Programm</a
   >
   <a
@@ -20,6 +23,7 @@
     routerLink="/aktuelles"
     [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
+    (click)="scroll()"
     >Aktuelles</a
   >
   <a
@@ -27,6 +31,7 @@
     routerLink="/erinnerungen"
     [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
+    (click)="scroll()"
     >Erinnerungen</a
   >
   <a
@@ -34,6 +39,7 @@
     routerLink="/sponsoring"
     [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
+    (click)="scroll()"
     >Sponsoring</a
   >
   <a
@@ -41,6 +47,7 @@
     routerLink="/hälfe"
     [routerLinkActive]="['text-decoration-underline']"
     [routerLinkActiveOptions]="{ exact: true }"
+    (click)="scroll()"
     >Mithelfen</a
   >
 </div>

@@ -6,11 +6,15 @@
       finalen Version abweichen und sind nicht verbindlich.
     </p>
   </div>
-  <a routerLink="/" id="title-img-container" class="p-4">
+  <a
+    routerLink="/"
+    id="title-img-container"
+    class="p-4"
+    (click)="scroll(navbar)">
     <img
       id="title-img"
       alt="NEOVERSUM Logo"
       src="assets/titelbild_1200px.png" />
   </a>
-  <app-navbar></app-navbar>
+  <app-navbar #navbar></app-navbar>
 </div>
