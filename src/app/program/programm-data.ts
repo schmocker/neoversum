@@ -25,7 +25,7 @@ let theaterProgram: ProgramPoint[] = [
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 19, 22, 22),
+    date: new Date(2023, 7, 19, 21, 21),
     title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
@@ -73,7 +73,7 @@ let theaterProgram: ProgramPoint[] = [
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 26, 22, 22),
+    date: new Date(2023, 7, 26, 21, 21),
     title: 'Theater NEOVERSUM',
     description: theaterDescription,
     bookingButton: true,
