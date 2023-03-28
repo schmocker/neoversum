@@ -18,6 +18,7 @@ import { SponsorenComponent } from './sponsoren/sponsoren.component';
 import { SponsorCardComponent } from './sponsoren/sponsor-card/sponsor-card.component';
 import { AktuellesComponent } from './aktuelles/aktuelles.component';
 import { PhotoSliderComponent } from './photo-slider/photo-slider.component';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData(localeDe);
 
@@ -37,7 +38,13 @@ registerLocaleData(localeDe);
     AktuellesComponent,
     PhotoSliderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, NgbModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    NgbModule,
+  ],
   providers: [{ provide: LOCALE_ID, useValue: 'de' }],
   bootstrap: [AppComponent],
 })
