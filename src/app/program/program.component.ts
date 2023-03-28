@@ -5,6 +5,7 @@ import {
   faStar,
 } from '@fortawesome/free-solid-svg-icons';
 import { program, ProgramPoint } from './programm-data';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-program',
@@ -18,7 +19,7 @@ export class ProgramComponent implements OnInit {
   program: ProgramPoint[];
   today = new Date();
 
-  constructor() {
+  constructor(private http: HttpClient) {
     this.program = program
       .sort((a, b) => {
         let datimeB = b.showTime
@@ -47,5 +48,11 @@ export class ProgramComponent implements OnInit {
       });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.http
+      .get('https://admin.ticketleo.com/api/v1/event/25661')
+      .subscribe(d => {
+        console.log(d);
+      });
+  }
 }
