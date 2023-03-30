@@ -13,7 +13,7 @@ export interface ProgramPoint {
   showDate?: boolean;
 }
 
-let theaterDescription = '🥂 🍕 🍺 🎶 🎭 🚀';
+let theaterDescription = 'Theater inkl. Abendessen (siehe Infos Theatergäste)';
 
 let theaterProgram: ProgramPoint[] = [
   {

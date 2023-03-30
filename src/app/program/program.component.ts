@@ -3,6 +3,7 @@ import {
   faMasksTheater,
   faRocket,
   faStar,
+  faTimeline,
 } from '@fortawesome/free-solid-svg-icons';
 import { program, ProgramPoint } from './programm-data';
 import { HttpClient } from '@angular/common/http';
@@ -14,6 +15,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProgramComponent implements OnInit {
   faRocket = faRocket;
+  faTimeline = faTimeline;
   faStar = faStar;
   faMasksTheater = faMasksTheater;
   program: ProgramPoint[];
