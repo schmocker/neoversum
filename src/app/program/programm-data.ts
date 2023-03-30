@@ -92,11 +92,17 @@ let theaterProgram: ProgramPoint[] = [
 
 export let program: ProgramPoint[] = [
   {
-    date: new Date(2023, 7, 18, 23),
+    date: new Date(2023, 7, 18, 23, 30),
     title: 'Les Touristes',
     url: 'http://www.lestouristes.ch/',
     description:
       'Ein Pop-Quintett aus Basel machen Pop-Jazz-Abgehmukke mit Mundarttexten zwischen vulgär und dramatisch.',
+    showTime: true,
+  },
+  {
+    date: new Date(2023, 7, 18, 0, 30),
+    title: 'DJ Cussion',
+    description: 'Mushups, Hiphop, Soul, Funkybreakbeat',
     showTime: true,
   },
   {
@@ -114,14 +120,14 @@ export let program: ProgramPoint[] = [
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 20, 0, 30),
+    date: new Date(2023, 7, 20, 0, 0),
     title: 'DJ Seniorr',
     showTime: true,
   },
-  {
-    date: new Date(2023, 7, 20),
-    title: 'Wolpertinger',
-  },
+  // {
+  //   date: new Date(2023, 7, 20),
+  //   title: 'Wolpertinger',
+  // },
   {
     date: new Date(2023, 7, 20, 17),
     title: 'Poetry Slam',
@@ -135,7 +141,7 @@ export let program: ProgramPoint[] = [
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 22, 18, 30),
+    date: new Date(2023, 7, 22, 19, 0),
     title: 'literarischer Abend',
     showTime: true,
   },
@@ -149,29 +155,37 @@ export let program: ProgramPoint[] = [
     date: new Date(2023, 7, 24, 19),
     title: 'What Rules',
     description:
-      'Die Band aus Baden, bei der niemand mehr stillsitzen kann. ' +
-      'Lasst euch von der gewaltigen Stimme von Beri in ihren Bann ziehen.',
+      'Die Badener Pop-Rap Band hat Lust auf Party und gute Laune! ' +
+      'Bereits seit 5 Jahren rocken sie die Deutschschweizer Bühnen und kommen ' +
+      'diesen Sommer mit neuer Musik im Sommer 23 und voller Energie. ' +
+      'Gute Stimmung und Freude an der Musik sind vorprogrammiert!',
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 24, 22, 30),
+    date: new Date(2023, 7, 24, 23, 30),
     title: 'Hi Jo',
     description:
-      'Ein unvergessliches Duo, das mit einem abenteuerlichen Musikinstrument und ' +
-      'unglaublicher Bühnenperformance noch lange in eurer Erinnerung bleiben wird.',
+      'Ein unvergessliches Duo, das mit einem abenteuerlichen Musikinstrument ' +
+      'und unglaublicher Bühnenperformance noch lange in eurer Erinnerung ' +
+      'bleiben wird.',
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 25, 19),
+    date: new Date(2023, 7, 25, 19, 30),
     title: 'Beat Mustache',
     description:
-      'Grossartige Musiker, inspiriert von Patent Ochsner, Open Season und Ska-P, ' +
-      'die eine tolle Mischung auf die Bühne bringen und diese im charmantesten Berndeutsch rocken.',
+      'Grossartige Musiker, inspiriert von Patent Ochsner, Open Season und ' +
+      'Ska-P, die eine tolle Mischung auf die Bühne bringen und diese im ' +
+      'charmantesten Berndeutsch rocken.',
     showTime: true,
   },
   {
     date: new Date(2023, 7, 25, 22),
-    title: 'Urban Pop',
+    title: 'Opération Zéro',
+    description:
+      'Elektrisierende Vibes und Rauchschwaden über der Küste der Aare. ' +
+      'Urban Pop aus Bern.',
+    url: 'https://operationzero.ch/',
     showTime: true,
   },
   {
@@ -195,6 +209,7 @@ export let program: ProgramPoint[] = [
   {
     date: new Date(2023, 7, 27, 0, 30),
     title: 'DJ Cussion',
+    description: 'Mushups, Hiphop, Soul, Funkybreakbeat',
     showTime: true,
   },
   ...theaterProgram,
