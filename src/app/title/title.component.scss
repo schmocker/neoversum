@@ -8,8 +8,8 @@
   height: -moz-available;
   height: -webkit-fill-available;
 
-  grid-template-rows: min-content auto min-content; // comment this line if prod
-  //grid-template-rows: auto min-content; // uncomment this line if prod
+  //grid-template-rows: min-content auto min-content; // comment this line if prod
+  grid-template-rows: auto min-content; // uncomment this line if prod
   grid-template-columns: 1fr;
 
   background-image: url('../../assets/planet_baden.png');
@@ -28,7 +28,7 @@
 
     img#title-img {
       justify-self: center;
-      
+
       min-height: 0;
       min-width: 0;
       max-height: 100%;
