@@ -100,7 +100,7 @@ export let program: ProgramPoint[] = [
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 18, 0, 30),
+    date: new Date(2023, 7, 19, 0, 30),
     title: 'DJ Cussion',
     description: 'Mushups, Hiphop, Soul, Funkybreakbeat',
     showTime: true,
