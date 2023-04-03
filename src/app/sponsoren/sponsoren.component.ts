@@ -15,6 +15,11 @@ export class SponsorenComponent implements OnInit {
   ].sort(() => 0.5 - Math.random());
   secondarySponsors: Sponsor[] = [
     {
+      name: 'Peterhans Handwerkercenter AG',
+      url: 'https://www.peterhans-hwz.ch/',
+      imgSrc: 'assets/sponsoren/PH_Logo_CMYK.jpg',
+    },
+    {
       name: 'Hächler AG',
       url: 'https://www.haechler.ch/',
       imgSrc: 'assets/sponsoren/Haechler.jpg',
