@@ -25,9 +25,19 @@ export class SponsorenComponent implements OnInit {
       imgSrc: 'assets/sponsoren/Haechler.jpg',
     },
     {
+      name: 'FUTURA Vorsorge',
+      url: 'https://futura.ch/',
+      imgSrc: 'assets/sponsoren/Logo_Futura_positiv_farbig.jpg',
+    },
+    {
       name: 'Verlag LANDxSTADT',
       url: 'https://www.landundstadt.ch/',
       imgSrc: 'assets/sponsoren/LxS_mit_Claim_rot.jpg',
+    },
+    {
+      name: 'Schmocker + Sägesser AG',
+      url: 'https://sundsag.ch/',
+      imgSrc: 'assets/sponsoren/s_und_s.png',
     },
     {
       name: 'Raiffeisenbank Lägern-Baregg',
@@ -40,6 +50,16 @@ export class SponsorenComponent implements OnInit {
       name: 'Beck Alt',
       url: 'https://beckalt.ch/',
       imgSrc: 'assets/sponsoren/Beck_Alt.png',
+    },
+    {
+      name: 'Holzhauer Pumpen Service AG',
+      url: 'https://www.holzhauer-pumpen.de/',
+      imgSrc: 'assets/sponsoren/Holzhauer-pumpen_Service AG.png',
+    },
+    {
+      name: 'A. Staffelbach AG',
+      url: 'https://www.a-staffelbach.ch/',
+      imgSrc: 'assets/sponsoren/staffelbach.jpg',
     },
     {
       name: 'Kreisschule Rohrdorferberg',
