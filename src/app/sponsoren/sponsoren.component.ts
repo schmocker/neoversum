@@ -40,6 +40,16 @@ export class SponsorenComponent implements OnInit {
       imgSrc: 'assets/sponsoren/s_und_s.png',
     },
     {
+      name: 'KARL BUBENHOFER AG',
+      url: 'https://www.kabe-farben.ch/',
+      imgSrc: 'assets/sponsoren/KABE_Logo_D_mit_Firmenname_RGB_2109.png',
+    },
+    {
+      name: 'die Mobiliar',
+      url: 'https://www.mobiliar.ch/',
+      imgSrc: 'assets/sponsoren/MOB_d_RGB_rot.png',
+    },
+    {
       name: 'Raiffeisenbank Lägern-Baregg',
       url: 'https://www.raiffeisen.ch/laegern-baregg/de/ueber-uns/ihre-bank-vor-ort.html',
       imgSrc: 'assets/sponsoren/Raiffeisen_LB_ihreBank_Logo_300622.jpg',
@@ -50,6 +60,21 @@ export class SponsorenComponent implements OnInit {
       name: 'Beck Alt',
       url: 'https://beckalt.ch/',
       imgSrc: 'assets/sponsoren/Beck_Alt.png',
+    },
+    {
+      name: 'WRZ Holzbau GmbH',
+      url: 'https://www.wrz-holzbau.ch/',
+      imgSrc: 'assets/sponsoren/LogoHolzbau.JPG',
+    },
+    {
+      name: 'WP Generalbau GmbH',
+      url: 'https://www.wp-generalbau.ch/',
+      imgSrc: 'assets/sponsoren/WP-Generalbau-Logo-RGB.png',
+    },
+    {
+      name: 'Hayloft-IT GmbH',
+      url: 'https://www.hayloft-it.ch/',
+      imgSrc: 'assets/sponsoren/Hayloft.png',
     },
     {
       name: 'Holzhauer Pumpen Service AG',
