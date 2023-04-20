@@ -137,7 +137,9 @@ export let program: ProgramPoint[] = [
     date: new Date(2023, 7, 21, 19),
     title: 'Los Billtones',
     url: 'https://losbilltones.com/',
-    description: 'Rocksteady, Early Reggae',
+    description:
+      'Die siebenköpfige Band aus Zürich bringt den Sound aus dem Jamaica der 60er ' +
+      'und 70er an die Limmat: Rocksteady und Early Reggae!',
     showTime: true,
   },
   {
