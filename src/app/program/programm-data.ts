@@ -150,6 +150,8 @@ export let program: ProgramPoint[] = [
   {
     date: new Date(2023, 7, 23, 19),
     title: 'Bougainville',
+    description:
+      'Poetische Fernweh-Songs - französisch und Mundart - aus der Innerschweiz!',
     url: 'https://bougainville.ch/',
     showTime: true,
   },
@@ -162,6 +164,7 @@ export let program: ProgramPoint[] = [
       'diesen Sommer mit neuer Musik im Sommer 23 und voller Energie. ' +
       'Gute Stimmung und Freude an der Musik sind vorprogrammiert!',
     showTime: true,
+    img: 'assets/sponsoren/pa_logo_schwarz.jpg',
   },
   {
     date: new Date(2023, 7, 24, 23, 30),

@@ -109,7 +109,14 @@
             }}</a>
             <ng-template #title>{{ pp.title }}</ng-template>
           </td>
-          <td>{{ pp.description }}</td>
+          <td>
+            <img
+              *ngIf="pp.img"
+              [src]="pp.img"
+              class="ms-3 mb-1"
+              style="float: right; max-height: 120px" />
+            {{ pp.description }}
+          </td>
           <td>
             <div
               class="badge bg-danger text-dark rounded text-wrap w-100 disabled"
