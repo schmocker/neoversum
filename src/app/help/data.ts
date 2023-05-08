@@ -1,4 +1,18 @@
-export let data = [
+export interface HelpAssignments {
+  role: string;
+  num: number;
+  url: string;
+}
+
+export interface HelpEvent {
+  name: string;
+  date: string;
+  time: string;
+  url: string;
+  assignments: HelpAssignments[];
+}
+
+export let data: HelpEvent[] = [
   {
     name: 'Badenfahrt 2023 - Späte Abendschichtschicht (23:00-04:00)',
     date: '2023-08-18',
