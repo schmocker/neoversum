@@ -43,17 +43,17 @@ interface slide {
 
 let slides: slide[] = [
   {
-    img: 'assets/portrait/chropfchroette_035.png',
+    img: 'assets/portrait/chropfchroette_035_min.png',
     title: 'Elvira',
     quote: "Hauptsach s'Pendel schwingt",
   },
   {
-    img: 'assets/portrait/chropfchroette_071.png',
+    img: 'assets/portrait/chropfchroette_071_min.png',
     title: 'Commander',
     quote: 'Nu kei Ufregig  - i han alls em Griff… Bobby säg au emol öppis !',
   },
   {
-    img: 'assets/portrait/chropfchroette_236.png',
+    img: 'assets/portrait/chropfchroette_236_min.png',
     title: 'Traumhild',
     quote: 'Gopf Göpf mer händ gunne!!',
   },
