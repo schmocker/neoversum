@@ -131,6 +131,10 @@ export let program: ProgramPoint[] = [
   {
     date: new Date(2023, 7, 20, 17),
     title: 'Poetry Slam',
+    description:
+      'Wenn durchs neoversum Worte wirbelnd auf Sätze treffen und Texte urknallen, ' +
+      'wenn Wörterwirbel einen Sog ergeben und eine Wörterwelt entsteht, dann ist ' +
+      'das Poetry Slam - der neoversum Slam!',
     showTime: true,
   },
   {
@@ -157,6 +161,7 @@ export let program: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 24, 19),
+    url: 'https://www.whatrules.ch',
     title: 'What Rules',
     description:
       'Die Badener Pop-Rap Band hat Lust auf Party und gute Laune! ' +
@@ -169,6 +174,7 @@ export let program: ProgramPoint[] = [
   {
     date: new Date(2023, 7, 24, 23, 30),
     title: 'Hi Jo',
+    url: 'https://jonesmusic.ch/#hi-jo',
     description:
       'Ein unvergessliches Duo, das mit einem abenteuerlichen Musikinstrument ' +
       'und unglaublicher Bühnenperformance noch lange in eurer Erinnerung ' +
@@ -178,6 +184,7 @@ export let program: ProgramPoint[] = [
   {
     date: new Date(2023, 7, 25, 19, 30),
     title: 'Beat Mustache',
+    url: 'https://www.beatmoustache.ch',
     description:
       'Grossartige Musiker, inspiriert von Patent Ochsner, Open Season und ' +
       'Ska-P, die eine tolle Mischung auf die Bühne bringen und diese im ' +
@@ -208,6 +215,7 @@ export let program: ProgramPoint[] = [
   {
     date: new Date(2023, 7, 26, 18, 30),
     title: 'Lasla Guzzi',
+    url: 'https://laslaguzzi.ch',
     description: 'Wunderbarer Mundart Poetry Pop',
     showTime: true,
   },
