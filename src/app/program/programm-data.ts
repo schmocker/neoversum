@@ -124,10 +124,12 @@ export let program: ProgramPoint[] = [
     title: 'DJ Seniorr',
     showTime: true,
   },
-  // {
-  //   date: new Date(2023, 7, 20),
-  //   title: 'Wolpertinger',
-  // },
+  {
+    date: new Date(2023, 7, 20, 14, 0),
+    title: 'Wolpertinger',
+    description: 'Bayerische Blaskapelle vom Rohdorferberg',
+    url: 'https://www.mablu.ch/wolpertinger/',
+  },
   {
     date: new Date(2023, 7, 20, 17),
     title: 'Poetry Slam',
