@@ -54,6 +54,31 @@ export class SponsorenComponent implements OnInit {
       url: 'https://www.raiffeisen.ch/laegern-baregg/de/ueber-uns/ihre-bank-vor-ort.html',
       imgSrc: 'assets/sponsoren/Raiffeisen_LB_ihreBank_Logo_300622.jpg',
     },
+    {
+      name: 'Bächli & Partner AG',
+      url: 'https://www.baechlipartner.ch/',
+      imgSrc: 'assets/sponsoren/baechli.svg',
+    },
+    {
+      name: 'Huser Gebäudetechnik AG',
+      url: 'https://huser-gt.ch/',
+      imgSrc: 'assets/sponsoren/huser.jpg',
+    },
+    {
+      name: 'WP Generalbau GmbH',
+      url: 'https://www.wp-generalbau.ch/',
+      imgSrc: 'assets/sponsoren/WP-Generalbau-Logo-RGB.png',
+    },
+    {
+      name: 'A. Staffelbach AG',
+      url: 'https://www.a-staffelbach.ch/',
+      imgSrc: 'assets/sponsoren/staffelbach.jpg',
+    },
+    {
+      name: 'TRAVELclub AG',
+      url: 'https://travelclub.ch/',
+      imgSrc: 'assets/sponsoren/travelclub.png',
+    },
   ].sort(() => 0.5 - Math.random());
   goennerSponsors: Sponsor[] = [
     {
@@ -67,11 +92,6 @@ export class SponsorenComponent implements OnInit {
       imgSrc: 'assets/sponsoren/LogoHolzbau.JPG',
     },
     {
-      name: 'WP Generalbau GmbH',
-      url: 'https://www.wp-generalbau.ch/',
-      imgSrc: 'assets/sponsoren/WP-Generalbau-Logo-RGB.png',
-    },
-    {
       name: 'Hayloft-IT GmbH',
       url: 'https://www.hayloft-it.ch/',
       imgSrc: 'assets/sponsoren/Hayloft.png',
@@ -80,11 +100,6 @@ export class SponsorenComponent implements OnInit {
       name: 'Holzhauer Pumpen Service AG',
       url: 'https://www.holzhauer-pumpen.de/',
       imgSrc: 'assets/sponsoren/Holzhauer-pumpen_Service AG.png',
-    },
-    {
-      name: 'A. Staffelbach AG',
-      url: 'https://www.a-staffelbach.ch/',
-      imgSrc: 'assets/sponsoren/staffelbach.jpg',
     },
     {
       name: 'Kreisschule Rohrdorferberg',
@@ -105,6 +120,16 @@ export class SponsorenComponent implements OnInit {
       name: 'Tägi AG',
       url: 'https://www.taegi.ch/',
       imgSrc: 'assets/sponsoren/Taegi_Logo_rgb_Zusatz.jpg',
+    },
+    {
+      name: 'Giger Böll Gerüstbau AG',
+      url: 'https://www.gigerboell.ch/',
+      imgSrc: 'assets/sponsoren/giger_boell.png',
+    },
+    {
+      name: 'Schreinerei Marthaler AG\n',
+      url: 'http://www.heinrich-marthaler.ch/',
+      imgSrc: 'assets/sponsoren/martaler.png',
     },
   ].sort(() => 0.5 - Math.random());
 
