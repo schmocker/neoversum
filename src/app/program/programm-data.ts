@@ -129,6 +129,7 @@ export let program: ProgramPoint[] = [
     title: 'Wolpertinger',
     description: 'Bayerische Blaskapelle vom Rohdorferberg',
     url: 'https://www.mablu.ch/wolpertinger/',
+    showTime: true,
   },
   {
     date: new Date(2023, 7, 20, 17),
