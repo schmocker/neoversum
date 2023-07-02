@@ -79,12 +79,12 @@ export class SponsorenComponent implements OnInit {
       url: 'https://travelclub.ch/',
       imgSrc: 'assets/sponsoren/travelclub.png',
     },
-    {
-      name: 'Zürich Versicherungs-Gesellschaft AG',
-      url: 'https://www.zurich.ch/',
-      imgSrc:
-        'assets/sponsoren/Zurich_Generalagentur_Vincenzo_Centolanza_Logo.svg',
-    },
+    // {
+    //   name: 'Zürich Versicherungs-Gesellschaft AG',
+    //   url: 'https://www.zurich.ch/',
+    //   imgSrc:
+    //     'assets/sponsoren/Zurich_Generalagentur_Vincenzo_Centolanza_Logo.svg',
+    // },
   ].sort(() => 0.5 - Math.random());
   goennerSponsors: Sponsor[] = [
     {
