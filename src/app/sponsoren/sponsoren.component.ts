@@ -88,6 +88,11 @@ export class SponsorenComponent implements OnInit {
   ].sort(() => 0.5 - Math.random());
   goennerSponsors: Sponsor[] = [
     {
+      name: 'Eglin Elektro AG',
+      url: 'https://www.eglin.ch/',
+      imgSrc: 'assets/sponsoren/egline.png',
+    },
+    {
       name: 'Beck Alt',
       url: 'https://beckalt.ch/',
       imgSrc: 'assets/sponsoren/Beck_Alt.png',
