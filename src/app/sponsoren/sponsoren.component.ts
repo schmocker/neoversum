@@ -90,7 +90,7 @@ export class SponsorenComponent implements OnInit {
     {
       name: 'Eglin Elektro AG',
       url: 'https://www.eglin.ch/',
-      imgSrc: 'assets/sponsoren/eglin.png',
+      imgSrc: 'assets/sponsoren/eglin.jpg',
     },
     {
       name: 'Beck Alt',
