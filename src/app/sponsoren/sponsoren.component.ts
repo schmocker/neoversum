@@ -93,6 +93,11 @@ export class SponsorenComponent implements OnInit {
       imgSrc: 'assets/sponsoren/weinstern.jpeg',
     },
     {
+      name: 'skylight planung klg',
+      url: 'https://www.skylight-planung.ch/',
+      imgSrc: 'assets/sponsoren/skylight.png',
+    },
+    {
       name: 'Spörri Veranstaltungstechnik GmbH',
       url: 'https://spoerri.swiss/',
       imgSrc: 'assets/sponsoren/Logo_Kompl_weiss_blau_rgb.jpg',
