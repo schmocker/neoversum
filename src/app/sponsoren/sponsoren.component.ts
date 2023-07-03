@@ -88,6 +88,11 @@ export class SponsorenComponent implements OnInit {
   ].sort(() => 0.5 - Math.random());
   goennerSponsors: Sponsor[] = [
     {
+      name: 'WeinStern Wettingen',
+      url: 'https://www.weinstern-wettingen.ch/',
+      imgSrc: 'assets/sponsoren/weinstern.jpeg',
+    },
+    {
       name: 'Spörri Veranstaltungstechnik GmbH',
       url: 'https://spoerri.swiss/',
       imgSrc: 'assets/sponsoren/Logo_Kompl_weiss_blau_rgb.jpg',
