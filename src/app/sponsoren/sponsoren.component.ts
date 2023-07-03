@@ -88,6 +88,11 @@ export class SponsorenComponent implements OnInit {
   ].sort(() => 0.5 - Math.random());
   goennerSponsors: Sponsor[] = [
     {
+      name: 'Gelato Lepore GmbH',
+      url: 'https://www.gelatolepore.ch/',
+      imgSrc: 'assets/sponsoren/lepore.png',
+    },
+    {
       name: 'Eglin Elektro AG',
       url: 'https://www.eglin.ch/',
       imgSrc: 'assets/sponsoren/eglin.jpg',
