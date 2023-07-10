@@ -88,6 +88,11 @@ export class SponsorenComponent implements OnInit {
         'assets/sponsoren/min/Zurich_Generalagentur_Vincenzo_Centolanza_Logo.png',
     },
     {
+      name: 'Heimgartner Transport AG',
+      url: 'https://heimgartner-transport.ch/',
+      imgSrc: 'assets/sponsoren/min/HEIMGARTNER_Hauptlogo_2020_rgb.jpg',
+    },
+    {
       name: 'WeinStern Wettingen',
       url: 'https://www.weinstern-wettingen.ch/',
       imgSrc: 'assets/sponsoren/min/weinstern.jpeg',
