@@ -104,6 +104,7 @@ export let program: ProgramPoint[] = [
     title: 'DJ Cussion',
     description: 'Mushups, Hiphop, Soul, Funkybreakbeat',
     showTime: true,
+    url: 'https://www.soulfoundation.ch/dj-booking/unsere-djs/dj-cussion/',
   },
   {
     date: new Date(2023, 7, 19, 14),
@@ -123,6 +124,7 @@ export let program: ProgramPoint[] = [
     date: new Date(2023, 7, 20, 0, 0),
     title: 'DJ Seniorr',
     showTime: true,
+    url: 'https://djseniorr.com/',
   },
   {
     date: new Date(2023, 7, 20, 14, 0),
@@ -152,6 +154,12 @@ export let program: ProgramPoint[] = [
   {
     date: new Date(2023, 7, 22, 19, 0),
     title: 'literarischer Abend',
+    description:
+      '<ul><li>19:00 Uhr:  "(Un)geschrieben - Texte, die schon sind oder es noch ' +
+      'werden können" gelesen von Hanna Widmer</li><li>19:45 Uhr: Texte aus "Bin ' +
+      'nebenan" von Ingrid Lausund. Absurd alltägliche Gedanken, gelesen von ' +
+      '<a href="https://www.filmmakers.eu/actors/larissa-keat" target="_blank">' +
+      'Larissa Keat</a></li></ul>',
     showTime: true,
   },
   {
@@ -227,6 +235,7 @@ export let program: ProgramPoint[] = [
     title: 'DJ Cussion',
     description: 'Mushups, Hiphop, Soul, Funkybreakbeat',
     showTime: true,
+    url: 'https://www.soulfoundation.ch/dj-booking/unsere-djs/dj-cussion/',
   },
   ...theaterProgram,
 ];
