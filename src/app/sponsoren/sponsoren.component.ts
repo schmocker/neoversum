@@ -9,7 +9,7 @@ export class SponsorenComponent implements OnInit {
   primarySponsors: Sponsor[] = [
     {
       name: 'Meier Schmocker AG',
-      url: 'https://www.msag2020.ch/',
+      url: 'https://meier-schmocker.ch/',
       imgSrc: 'assets/sponsoren/min/meier-schmocker-ag.jpeg',
     },
   ].sort(() => 0.5 - Math.random());
