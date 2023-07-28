@@ -11,6 +11,9 @@
     mit und entdecke mit uns eine neue Welt – eine Welt jenseits des bis jetzt
     bekannten Universums!
   </p>
+  <div class="d-flex justify-content-center mb-3">
+    <div class="alert alert-danger">Wir sind ausverkauft!</div>
+  </div>
   <div class="d-flex justify-content-center">
     <a [routerLink]="'/programm'" class="btn btn-dark mx-2">
       <fa-icon [icon]="faCalendarCheck" class="text-danger"></fa-icon>
@@ -19,7 +22,7 @@
     <a
       href="https://reservation.ticketleo.com/event/25661/theater-neoversum"
       target="_blank"
-      class="btn btn-dark mx-2">
+      class="btn btn-dark mx-2 disabled">
       <fa-icon [icon]="faRocket" class="text-danger"></fa-icon>
       Theater buchen!</a
     >
