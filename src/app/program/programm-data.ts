@@ -177,7 +177,7 @@ export let program: ProgramPoint[] = [
     description:
       'Die Badener Pop-Rap Band hat Lust auf Party und gute Laune! ' +
       'Bereits seit 5 Jahren rocken sie die Deutschschweizer Bühnen und kommen ' +
-      'diesen Sommer mit neuer Musik im Sommer 23 und voller Energie. ' +
+      'diesen Sommer mit neuer Musik und voller Energie. ' +
       'Gute Stimmung und Freude an der Musik sind vorprogrammiert!',
     showTime: true,
     img: 'assets/sponsoren/pa_logo_schwarz.jpg',
