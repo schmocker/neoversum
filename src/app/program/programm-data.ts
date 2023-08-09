@@ -100,7 +100,7 @@ export let program: ProgramPoint[] = [
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 19, 0, 30),
+    date: new Date(2023, 7, 19, 1, 0),
     title: 'DJ Cussion',
     description: 'Mushups, Hiphop, Soul, Funkybreakbeat',
     showTime: true,
@@ -115,7 +115,7 @@ export let program: ProgramPoint[] = [
   },
   {
     date: new Date(2023, 7, 19, 17, 30),
-    title: 'Al Berto and the fried Bikinis',
+    title: 'Al-Berto and The Fried Bikinis',
     url: 'http://www.al-berto.ch/',
     description: 'Feels like instant holidays',
     showTime: true,
@@ -212,9 +212,11 @@ export let program: ProgramPoint[] = [
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 26, 0),
-    title: 'DJ',
+    date: new Date(2023, 7, 26, 0, 30),
+    title: 'DJ Vertigo, DJ Golden Boy & DJ Shory (SYNCCITY Records)',
     showTime: true,
+    description:
+      'DJ Trio mit Future Beats, Baile Funk, Afro & Amapiano, House Music',
   },
   {
     date: new Date(2023, 7, 26, 14),
@@ -231,7 +233,7 @@ export let program: ProgramPoint[] = [
     showTime: true,
   },
   {
-    date: new Date(2023, 7, 27, 0, 30),
+    date: new Date(2023, 7, 27, 0, 0),
     title: 'DJ Cussion',
     description: 'Mushups, Hiphop, Soul, Funkybreakbeat',
     showTime: true,
