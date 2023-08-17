@@ -80,7 +80,7 @@
             class="text-nowrap border-0"
             [class]="
               (pp.showDate ? 'bold ' : '') +
-              (pp.date.getDay() == today.getDay() &&
+              (pp.date.getDate() == today.getDate() &&
               pp.date.getMonth() == today.getMonth() &&
               pp.date.getFullYear() == today.getFullYear()
                 ? 'text-danger'
