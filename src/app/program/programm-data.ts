@@ -239,5 +239,12 @@ export let program: ProgramPoint[] = [
     showTime: true,
     url: 'https://www.soulfoundation.ch/dj-booking/unsere-djs/dj-cussion/',
   },
+  {
+    date: new Date(2023, 7, 27, 0, 0),
+    title: 'Leftovers',
+    description:
+      'Rock von gestern und aufgewärmte Sommerhits mit lauwarmen Balladen.',
+    showTime: true,
+  },
   ...theaterProgram,
 ];
