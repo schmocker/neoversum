@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'kontakt', component: ImpressumComponent},
   {path: 'sponsoring', component: SponsorenComponent},
   {path: 'aktuelles', component: AktuellesComponent},
-  {path: '*', redirectTo: ''},
+  {path: '**', redirectTo: ''},
 ];
 
 @NgModule({
